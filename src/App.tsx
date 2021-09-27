@@ -1,27 +1,7 @@
-import React from 'react';
-import './App.scss';
+import * as React from 'react';
+import { Admin } from 'react-admin';
+import jsonServerProvider from 'ra-data-json-server';
 
-interface Props {
-  onClick: () => void;
-}
+const dataProvider = jsonServerProvider('https://jsonplaceholder.typicode.com');
 
-export const Provider: React.FC<Props> = React.memo(
-  ({ onClick, children }) => (
-    <button
-      type="button"
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  ),
-);
-
-export const App: React.FC = () => {
-  return (
-    <div className="starter">
-      <Provider onClick={() => ({})}>
-        <TodoList />
-      </Provider>
-    </div>
-  );
-};
+export const App: React.FC = () => <Admin dataProvider={dataProvider} />;
