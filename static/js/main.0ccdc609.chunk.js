@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-typescript-starter-pack"]=this["webpackJsonpreact-typescript-starter-pack"]||[]).push([[0],{219:function(t,e,c){},324:function(t,e){},385:function(t,e,c){"use strict";c.r(e);var r=c(0),n=c.n(r),a=c(10),s=c.n(a),o=(c(219),c(426)),p=c(162),i=c(63),d=Object(p.a)("https://jsonplaceholder.typicode.com"),j=function(){return Object(i.jsx)(o.a,{dataProvider:d})};s.a.render(Object(i.jsx)(n.a.StrictMode,{children:Object(i.jsx)(j,{})}),document.getElementById("root"))}},[[385,1,2]]]);
+//# sourceMappingURL=main.0ccdc609.chunk.js.map
